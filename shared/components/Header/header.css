@@ -1,0 +1,101 @@
+.content,
+.content_left,
+.content_right,
+.logo,
+.search,
+.search_text_field {
+  box-sizing: border-box;
+}
+
+.content_left,
+.content_right,
+.logo,
+.logo_text,
+.search,
+.search_text_field,
+.search_button {
+  display: inline-block;
+}
+
+.container {
+  background: white;
+  box-shadow: 1px 1px 1px rgba(220, 220, 220, 0.65);
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+  .content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 5px 2.5% 5px;
+  }
+    .content_left {
+      max-width: 700px;
+      width: 70%;
+    }
+      .logo {
+        vertical-align: top;
+        cursor: pointer;
+        height: 50px;
+        padding: 7px 0 8px;
+      }
+        .logo_img {
+          width: 35px;
+          height: 35px;
+        }
+        .logo_text {
+          color: aliceblue;
+          font-size: 16px;
+          vertical-align: super;
+          line-height: 20px;
+        }
+      .search {
+        position: relative;
+        height: 50px;
+        width: 70%;
+        margin-left: 15%;
+      }
+        .search_text_field {
+          width: 100%!important;
+          height: 50px!important;
+          padding: 9px 50px 9px 0;
+        }
+        .search_button {
+          width: 25px;
+          height: 32px;
+          position: absolute;
+          bottom: 9px;
+          right: 0;
+          background: transparent;
+          border: 0;
+          padding: 0;
+          cursor: pointer;
+        }
+        .search_button:focus {
+          outline: none;
+        }
+          .search_button_icon {
+            width: 100%;
+            height: 100%;
+            fill: rgba(0, 0, 0, 0.298039);
+            composes: transition from '../../../static/css/theme.css'
+          }
+          .search_button:hover .search_button_icon,
+          .search_button_icon:hover {
+            fill: rgb(255, 235, 59);
+          }
+    .content_right {
+      width: 30%;
+      max-width: 200px;
+      direction: rtl;
+    }
+      .login {
+        padding: 7px;
+      }
+  .offset {
+    height: 60px;
+  }

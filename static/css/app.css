@@ -1,0 +1,28 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background-color: rgb(255, 235, 59);
+}
+
+::-moz-selection {
+  background-color: rgb(255, 235, 59);
+}
+
+body {
+  background: #f4f4f4;
+}
